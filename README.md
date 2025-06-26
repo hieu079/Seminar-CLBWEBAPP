@@ -1,70 +1,44 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dự án "Cú Chăm Học" - Ứng dụng tạo câu hỏi bằng AI
+Đây là dự án front-end cho ứng dụng "Cú Chăm Học", được xây dựng bằng ReactJS và làm giao diện với TailwindCSS.
+Mục tiêu của dự án là sử dụng sức mạnh của mô hình ngôn ngữ Google Gemini để tự động tạo ra các bộ câu hỏi ôn tập theo chủ đề, định dạng và cấp độ khó do người dùng yêu cầu.
+Các tính năng chính
+Tạo bộ câu hỏi theo chủ đề: Người dùng nhập vào một chủ đề bất kỳ (ví dụ: "Lịch sử Việt Nam thế kỷ 20", "Các định luật Newton",...), hệ thống sẽ tạo ra các câu hỏi liên quan.
+Tạo câu hỏi theo Form có sẵn: Cho phép người dùng đưa ra một cấu trúc câu hỏi và yêu cầu AI điền vào chỗ trống.
+Phân loại độ khó: Mỗi câu hỏi được tạo ra sẽ được phân loại theo 3 cấp độ: Dễ, Trung bình, và Khó.
+Giao diện hiện đại: Giao diện người dùng được thiết kế đơn giản, trực quan và đáp ứng tốt trên nhiều thiết bị nhờ TailwindCSS.
+Công nghệ sử dụng
+Front-end: ReactJS
+Styling: TailwindCSS
+AI / API: Google Gemini API
+Hướng dẫn cài đặt và chạy dự án
+Để chạy dự án này trên máy của bạn, hãy làm theo các bước sau:
+1. Clone repository này về máy:
+Generated bash
+git clone <URL_REPOSITORY_CUA_BAN>
+Use code with caution.
+Bash
+2. Di chuyển vào thư mục dự án:
+Generated bash
+cd ten-du-an
+Use code with caution.
+Bash
+3. Cài đặt các thư viện cần thiết:
+Lệnh này sẽ tải và cài đặt tất cả các dependencies được định nghĩa trong file package.json (bao gồm React, TailwindCSS,...).
+Generated bash
+npm install
+Use code with caution.
+Bash
+4. Cấu hình API Key (Quan trọng):
+Dự án cần có API Key từ Google Gemini để hoạt động.
+Tạo một file mới ở thư mục gốc của dự án với tên là .env
+Thêm dòng sau vào file .env và thay thế bằng key của bạn:
+Generated code
+REACT_APP_GEMINI_API_KEY='API_KEY_CUA_BAN_O_DAY'
+Use code with caution.
+5. Khởi chạy dự án:
+Sau khi cài đặt xong, chạy lệnh sau để khởi động ứng dụng ở chế độ development.
+Generated bash
+npm start
+Use code with caution.
+Bash
+Mở trình duyệt và truy cập vào http://localhost:3000 để xem ứng dụng. Trang sẽ tự động tải lại mỗi khi bạn lưu thay đổi trong mã nguồn.
